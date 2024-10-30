@@ -1,0 +1,445 @@
+<html><head><base href="." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halloween dos Seixas 2024</title>
+<meta name="description" content="Festa de Halloween dos Seixas 2024 - 31 de Outubro. Venha participar da festa mais assustadora do ano!">
+<meta property="og:title" content="Halloween dos Seixas 2024">
+<meta property="og:description" content="Festa de Halloween dos Seixas 2024 - 31 de Outubro. Venha participar da festa mais assustadora do ano!">
+<meta property="og:image" content="images/halloween-banner.jpg">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Creepster', cursive;
+    color: #ff6600;
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.halloween-title {
+    font-size: 2.5em;
+    color: #ff6600;
+    text-shadow: 0 0 10px #ff0000;
+    animation: flicker 2s infinite;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.date {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+@keyframes flicker {
+    0%, 100% { text-shadow: 0 0 10px #ff0000; }
+    50% { text-shadow: 0 0 20px #ff0000, 0 0 30px #ff6600; }
+}
+
+.info-card {
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+}
+
+.info-card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+.requirements {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requirements li {
+    margin: 8px 0;
+    padding: 8px;
+    background-color: rgba(255, 102, 0, 0.1);
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.spooky-button {
+    background-color: #ff6600;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Creepster', cursive;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.confirmed-list {
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.guest-list li {
+    background-color: rgba(255, 102, 0, 0.1);
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.confirmation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.confirmation-input {
+    padding: 12px;
+    border: 2px solid #ff6600;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ff6600;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ghost {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-20px) translateX(20px);
+    }
+    50% {
+        transform: translateY(-40px) translateX(0);
+    }
+    75% {
+        transform: translateY(-20px) translateX(-20px);
+    }
+}
+
+.pumpkin {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.bat {
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    animation: fly 8s ease-in-out infinite;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+@keyframes fly {
+    0%, 100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-30px) translateX(30px) rotate(15deg);
+    }
+    50% {
+        transform: translateY(-60px) translateX(0) rotate(-15deg);
+    }
+    75% {
+        transform: translateY(-30px) translateX(-30px) rotate(15deg);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .halloween-title {
+        font-size: 2em;
+    }
+    
+    .info-card h2 {
+        font-size: 1.3em;
+    }
+    
+    .requirements li {
+        font-size: 0.85em;
+    }
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 2px solid #ff6600;
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { transform: translate(-50%, 100%); }
+    to { transform: translate(-50%, 0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="halloween-title">Halloween dos Seixas</h1>
+        <p class="date">31 de Outubro de 2024</p>
+    </header>
+
+    <img class="banner-image" src="images/halloween-banner.jpg" alt="Banner do Halloween dos Seixas" width="800" height="600">
+
+    <div class="info-card">
+        <h2>🎃 A Festa Mais Assustadora do Ano! 👻</h2>
+        <p>Prepare sua fantasia mais aterrorizante e venha se divertir conosco!</p>
+    </div>
+
+    <div class="info-card">
+        <h2>📝 Requisitos para Entrada</h2>
+        <ul class="requirements">
+            <li>🦇 FANTASIA OBRIGATÓRIA</li>
+            <li>🍖 1KG DE CARNE POR PESSOA</li>
+            <li>🍺 TRAGA SUA BEBIDA</li>
+        </ul>
+    </div>
+
+    <div class="info-card">
+        <h2>⏰ Horário</h2>
+        <p>A partir das 19:00</p>
+    </div>
+
+    <div class="info-card">
+        <h2>📍 Local</h2>
+        <p>Casa dos Seixas</p>
+        <button class="spooky-button">Confirmar Presença</button>
+    </div>
+
+    <div class="confirmed-list">
+        <h2>👻 Lista de Convidados Confirmados 👻</h2>
+        <div class="guest-count">Total de Confirmados: <span id="guestCount">0</span></div>
+        <ul class="guest-list" id="guestList">
+            <!-- Lista será preenchida via JavaScript -->
+        </ul>
+        <div class="confirmation-form">
+            <input type="text" id="guestName" placeholder="Seu nome" class="confirmation-input">
+            <button class="spooky-button" onclick="addGuest()">Confirmar</button>
+        </div>
+    </div>
+</div>
+
+<svg class="ghost" width="50" height="50" viewBox="0 0 50 50">
+    <path d="M25,0 C15,0 10,10 10,20 C10,30 10,50 0,50 L50,50 C40,50 40,30 40,20 C40,10 35,0 25,0 Z" fill="white"/>
+    <circle cx="20" cy="15" r="2" fill="black"/>
+    <circle cx="30" cy="15" r="2" fill="black"/>
+</svg>
+
+<svg class="pumpkin" viewBox="0 0 100 100">
+    <path d="M50,20 C20,20 0,50 0,70 C0,90 20,100 50,100 C80,100 100,90 100,70 C100,50 80,20 50,20" fill="#ff6600"/>
+    <path d="M50,0 L50,20 M30,10 L50,20 L70,10" stroke="#2d5016" stroke-width="5"/>
+    <path d="M30,50 L30,70 M70,50 L70,70 M50,50 L50,80" fill="none" stroke="#000" stroke-width="5"/>
+</svg>
+
+<svg class="bat" viewBox="0 0 100 50">
+    <path d="M50,25 L20,0 L0,10 L20,25 L0,40 L20,50 L50,25" fill="#000"/>
+    <path d="M50,25 L80,0 L100,10 L80,25 L100,40 L80,50 L50,25" fill="#000"/>
+</svg>
+
+<script>
+// Function to auto-refresh the guest list with error handling
+function autoRefreshGuestList() {
+    setInterval(() => {
+        try {
+            const currentStorageGuests = JSON.parse(localStorage.getItem('halloweenGuests')) || [];
+            if (JSON.stringify(currentStorageGuests) !== JSON.stringify(guests)) {
+                guests = currentStorageGuests;
+                updateGuestList();
+            }
+        } catch (error) {
+            console.error('Error refreshing guest list:', error);
+            localStorage.setItem('halloweenGuests', JSON.stringify([]));
+        }
+    }, 30000); // 30 seconds
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Adjust number of decorations based on screen size
+    const decorationCount = window.innerWidth < 768 ? 4 : 8;
+    for(let i = 0; i < decorationCount; i++) {
+        let ghost = document.querySelector('.ghost').cloneNode(true);
+        ghost.style.left = Math.random() * window.innerWidth + 'px';
+        ghost.style.top = Math.random() * window.innerHeight + 'px';
+        ghost.style.animationDelay = Math.random() * 5 + 's';
+        document.body.appendChild(ghost);
+    }
+
+    for(let i = 0; i < 6; i++) {
+        let pumpkin = document.querySelector('.pumpkin').cloneNode(true);
+        pumpkin.style.left = Math.random() * window.innerWidth + 'px';
+        pumpkin.style.top = Math.random() * window.innerHeight + 'px';
+        document.body.appendChild(pumpkin);
+    }
+
+    for(let i = 0; i < 5; i++) {
+        let bat = document.querySelector('.bat').cloneNode(true);
+        bat.style.left = Math.random() * window.innerWidth + 'px';
+        bat.style.top = Math.random() * window.innerHeight + 'px';
+        bat.style.animationDelay = Math.random() * 3 + 's';
+        document.body.appendChild(bat);
+    }
+
+    // Start the auto-refresh
+    autoRefreshGuestList();
+    
+    // Initialize the guest list
+    updateGuestList();
+});
+
+// Lista de convidados no localStorage
+let guests = JSON.parse(localStorage.getItem('halloweenGuests')) || [];
+
+function updateGuestList() {
+    const guestList = document.getElementById('guestList');
+    const guestCount = document.getElementById('guestCount');
+    guestList.innerHTML = '';
+    
+    guests.forEach((guest, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            ${guest}
+            <button class="spooky-button" onclick="removeGuest(${index})" style="padding: 5px 10px; font-size: 0.8em;">
+                Remover
+            </button>
+        `;
+        guestList.appendChild(li);
+    });
+    
+    guestCount.textContent = guests.length;
+    localStorage.setItem('halloweenGuests', JSON.stringify(guests));
+
+    // Adiciona animação ao atualizar a lista
+    const listItems = guestList.querySelectorAll('li');
+    listItems.forEach((item, idx) => {
+        item.style.animation = `fadeIn 0.5s ease-in-out ${idx * 0.1}s`;
+    });
+}
+
+function addGuest() {
+    const guestInput = document.getElementById('guestName');
+    const name = guestInput.value.trim();
+    
+    if (name) {
+        if (!guests.includes(name)) {
+            guests.push(name);
+            updateGuestList();
+            guestInput.value = '';
+            
+            // Adiciona notificação temporária
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #ff6600;
+                color: black;
+                padding: 15px;
+                border-radius: 5px;
+                animation: slideUp 0.3s ease-out, fadeOut 0.3s ease-in 2.7s;
+                z-index: 1000;
+            `;
+            notification.textContent = `🎃 ${name} confirmado com sucesso! Não se esqueça da fantasia, bebida e carne! 👻`;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        } else {
+            alert('Este convidado já está na lista!');
+        }
+    }
+}
+
+function removeGuest(index) {
+    const removedGuest = guests[index];
+    guests.splice(index, 1);
+    updateGuestList();
+    
+    // Adiciona notificação de remoção
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ff3300;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        animation: slideUp 0.3s ease-out, fadeOut 0.3s ease-in 2.7s;
+        z-index: 1000;
+    `;
+    notification.textContent = `${removedGuest} foi removido da lista`;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
+// Initialize the guest list
+updateGuestList();
+</script>
+
+</body>
+</html>
